@@ -67,8 +67,9 @@ p{
     padding-bottom: 20px;
 }
 .second-half-width img {    
-    width: 826px;   
-    margin: 70px auto;    
+    width: 150%;
+    margin: 70px auto;
+    
 }
 
 /* third-section style */
@@ -144,6 +145,49 @@ small{
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 700px) {
+    
+    .one-third{
+        display: block;
+        margin:5px;
+    }
+    section{
+        height: auto;
+        padding-bottom: 5px;
+    }
+    .second-half-width img, .one-third img{
+        width:80%;
+        margin: 0 auto;
+     }
+     .second-half-width, .half-width{
+        width: 100%;
+        float: none;    
+        
+    }
+    div{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    .super-button{
+        width: 257px;
+        margin-bottom: 20px;       
+    }
+    h1, p{
+        text-align: center !important;
+        
+    }
+    .footer-container{
+        width:100%;    
+        padding: 10px;
+        background-color: #EC4C78;
+        margin: 0 auto;
+        border-radius: 10px;
+        color: #fff;
+        box-shadow: 10px 10px 40px grey;
+    }
+  }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     
     .one-third{
